@@ -1,0 +1,111 @@
+/*Colbalt Blue - #041793
+
+
+
+Light Blue = #17A9FA
+
+
+
+Baby Blue - #BFE1FF
+
+
+
+Red - #FE4B42
+
+
+
+Yellow - #FED512 */
+
+body {
+  background-color: #BFE1FF;
+}
+
+nav {
+  background-color: #041793;
+}
+
+.about {
+  background-color: #FED512;
+}
+
+.services {
+  background-color: #041793;
+    color: white;
+}
+
+
+header {
+  background: url(../images/mermaid.JPG);
+}
+
+#mermaid {
+  width: 100%
+}
+
+#close {
+  display: none;
+}
+
+.nav-bar a {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+.nav-bar {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-bar li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#hamburger {
+  font-size: 100px;
+  text-decoration: none;
+  display: inline-block; //*// Extra small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575px) {}
+  /*// Small devices (landscape phones, 576px and up)*/
+  @media (min-width: 576px) and (max-width: 767px) {}
+}
+
+.active {
+  background-color: black
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+.open-nav {
+  text-align: center;
+  width: 100% height: 100VH;
+  display: flex;
+  justify-content: flex-end;
+  background: #80C2B3;
+  flex-direction: column;
+}
